@@ -5,6 +5,7 @@ def add_number():
     numero = 0
     numerador = 0
     denominador = 1
+    columna = 1
 
     while True:
         print("\n Seleccione la opcion de número:")
@@ -24,10 +25,13 @@ def add_number():
             #print(numero)
         elif opcion == 3:
             numeros.append(numero)
+            print(f"Ingreso la columna {columna}")
             #print(numeros, numero)
             numero = 0
+            columna += 1
         elif opcion == 4:
             numeros.append(numero)
+            columna = 0
             break
         else: 
             print("\n Ingrese una opción válida")
