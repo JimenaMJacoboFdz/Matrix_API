@@ -2,22 +2,28 @@ import numpy
 import add_Number
 
 def create_matrix():
-    rows = int(input("Enter the number of rows: "))
-    columns = int(input("Enter the number of columns: "))
+    print("")
+    print("-----------------------------------------------------")
+    rows = int(input("Enter the number of rows:          "))
+    columns = int(input("Enter the number of columns:       "))
+    print("-----------------------------------------------------")
+    #print("")
 
     matrix = []
 
     #matrix = [[0 for _ in range(columns)] for _ in range(rows)]
     #print(matrix)
 
-    print("Enter the numbers of the matrix")
+    #print("Add the numbers of the matrix")
 
     while len(matrix) < rows:
-        print(f"Se encuentra en la fila {len(matrix)}.")
-        print(f"Ingresar {columns} conjunto de números.")
+        
+        print(f"You are in the row:      {len(matrix)}")
         numbers = add_Number.add_number()
+        #print(f"You are located in ({len(matrix)}, {len(numbers)}.")
         if len(numbers) == columns:
             matrix.append(numbers)
+            #print(matrix)
         else:
             print("Se ingreso columnas demás en la matriz")
 

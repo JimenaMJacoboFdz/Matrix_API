@@ -5,18 +5,22 @@ def add_number():
     numero = 0
     numerador = 0
     denominador = 1
-    columna = 1
+    columna = 0
 
     while True:
-        print("\n Seleccione la opcion de número:")
-        print("1. Sin fracción")
-        print("2. Fracción")
-        print("3. Nuevo numero")
-        print("4. Salir")
+        #print("\n Choose an option:")
+        #print("....................................")
+        print(f"You are in the column:   {columna}")
+        print("")
+        print("1. Decimal")
+        print("2. Fraction")
+        print("3. New column")
+        print("4. New row")
 
-        opcion = int(input("\n Seleccione una opción válida (1-2): "))
+        opcion = int(input("Choose a valid option: "))
+        
         if opcion == 1:
-            numero += complex(input("\n Ingrese el número: "))
+            numero += complex(input("\n Ingrese el número: \n"))
             #print(numero)
         elif opcion == 2:
             numerador = complex(input("\n Ingrese el numerador: "))
@@ -25,13 +29,15 @@ def add_number():
             #print(numero)
         elif opcion == 3:
             numeros.append(numero)
-            print(f"Ingreso la columna {columna}")
+            print("....................................")
             #print(numeros, numero)
             numero = 0
             columna += 1
+            
         elif opcion == 4:
             numeros.append(numero)
-            columna = 0
+            print("___________________________________________")
+            #columna = 0
             break
         else: 
             print("\n Ingrese una opción válida")
