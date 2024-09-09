@@ -13,6 +13,8 @@ def create_matrix():
     print("Enter the numbers of the matrix")
 
     while len(matrix) < rows:
+        print(f"Se encuentra en la fila {len(matrix)}.")
+        print(f"Ingresar {columns} conjunto de números.")
         numbers = add_Number.add_number()
         if len(numbers) == columns:
             matrix.append(numbers)

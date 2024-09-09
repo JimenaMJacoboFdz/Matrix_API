@@ -13,7 +13,7 @@ def add_number():
         print("3. Nuevo numero")
         print("4. Salir")
 
-        opcion = int(input("Seleccione una opción válida (1-2): \n"))
+        opcion = int(input("\n Seleccione una opción válida (1-2): "))
         if opcion == 1:
             numero += complex(input("\n Ingrese el número: "))
             #print(numero)
