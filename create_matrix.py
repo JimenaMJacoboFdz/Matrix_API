@@ -11,14 +11,22 @@ def create_matrix():
     #print(matrix)
 
     print("Enter the numbers of the matrix")
-    
+
+    while len(matrix) < rows:
+        numbers = add_Number.add_number()
+        if len(numbers) == columns:
+            matrix.append(numbers)
+        else:
+            print("Se ingreso columnas demás en la matriz")
+
+    '''
     for i in range(rows):
         numbers = add_Number.add_number()
         if len(numbers) == columns:
             matrix.append(numbers)
         else:
             print("Se ingreso columnas demás en la matriz")
-    '''
+    
     for i in range(rows):
         for j in range(columns):
             print(i, j)

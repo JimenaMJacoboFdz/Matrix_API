@@ -16,15 +16,15 @@ def add_number():
         opcion = int(input("Seleccione una opción válida (1-2): \n"))
         if opcion == 1:
             numero += complex(input("\n Ingrese el número: "))
-            print(numero)
+            #print(numero)
         elif opcion == 2:
             numerador = complex(input("\n Ingrese el numerador: "))
             denominador = complex(input("\n Ingrese el denominador: "))
             numero += numerador/denominador
-            print(numero)
+            #print(numero)
         elif opcion == 3:
             numeros.append(numero)
-            print(numeros, numero)
+            #print(numeros, numero)
             numero = 0
         elif opcion == 4:
             numeros.append(numero)
@@ -32,10 +32,10 @@ def add_number():
         else: 
             print("\n Ingrese una opción válida")
 
-    print(numeros)
+    #print(numeros)
 
     return numeros
 
 
-if __name__ == "__main__":
-    numbers = add_number()
+#if __name__ == "__main__":
+ #   numbers = add_number()
